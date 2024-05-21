@@ -1,7 +1,7 @@
 # Indexer-and-Searcher-of-TREC-ROBUST-dataset
-* Both Indexer and Searcher use Python library: Pylucene
+* Both Indexer and Searcher use Python library: [Pylucene](https://lucene.apache.org/pylucene/)
 * Dataset: TREC-ROBUST dataset
-* Final ouput gives standard IR evaluation methods: 1) ndcg@20 and 2) MRR
+* Final ouput gives standard IR evaluation methods using [pyserini](https://pypi.org/project/pyserini/): 1) ndcg@20 and 2) MRR
 # Indexing
 * run mtc2224-indexer.py for indexing as:\
 _python3 mtc2224-indexer.py \ \
@@ -10,7 +10,7 @@ _python3 mtc2224-indexer.py \ \
 # Searching
 * Two codes are provided: 1) mtc2224-searcher.py and mtcs2224-searcher.py
 * mtc___ uses default scoring functions(like BM25) for scoring queries and documents.
-* mtcs___ uses custom scoring function provided in paper **"Truncated Models for Probabilistic Weighted Retrieval"**.
+* mtcs___ uses custom scoring function provided in paper [Truncated Models for Probabilistic Weighted Retrieval](https://dl.acm.org/doi/10.1145/3476837).
 * For mtc___, use command as:\
 _python3 mtc2224-searcher.py \ \
 /path/to/query/files/ \ \
