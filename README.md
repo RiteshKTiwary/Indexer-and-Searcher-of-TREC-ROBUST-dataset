@@ -17,7 +17,7 @@ _python3 mtc2224-searcher.py \ \
 /path/to/index/  \ \
 /path/to/output/file <rollno>_\
  It's output is generating a qrel file in the form: {query_num} Q0 {doc_id} 0 {score} {roll_no}
-* I have attached an output with the name as _outputFile_.
+* I have attached an output with the name as _mtc2224-output.txt_.
 * For mtcs___, use command as:\
 _python3 mtcs2224-searcher.py \ \
 /path/to/query_dir \ \
