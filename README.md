@@ -16,13 +16,16 @@ _python3 mtc2224-searcher.py /path/to/query/files/ /path/to/index/ /path/to/outp
 _python3 mtcs2224-searcher.py /path/to/query_dir /path/to/index_dir /path/to/output_file.txt <rollno> --tau1 0.5 --tau2 0.5 --k1 2 --k2 2 --alpha 0.5_ \
 **Since this code is not giving proper output as expected so any suggestions are welcome from your side.**
 # Results
+* Given results are generated using output qrel of mtc___.
 * **For ROBUST qrel:**\
-_python3 -m pyserini.eval.trec_eval -m ndcg_cut.20 -m recip_rank /path/to/trec678rb/qrels/robust_601-700.qrel /path/to/qrel-generated_ \
+_python3 -m pyserini.eval.trec_eval -m ndcg_cut.20 -m recip_rank \ \
+/path/to/trec678rb/qrels/robust_601-700.qrel /path/to/qrel-generated_ 
 * Output for the ROBUST is as: \
 recip_rank     	all	    0.6901 \
 ndcg_cut_20     all	    0.3821
 * **For TREC678:**\
-_python3 -m pyserini.eval.trec_eval -m ndcg_cut.20 -m recip_rank /path/to/trec678rb/qrels/trec678_301-450.qrel /path/to/qrel-generated_ \
+_python3 -m pyserini.eval.trec_eval -m ndcg_cut.20 -m recip_rank \ \
+/path/to/trec678rb/qrels/trec678_301-450.qrel /path/to/qrel-generated_ 
 * Output for the TREC678 is as: \
 recip_rank     	all	    0.6400 \
 ndcg_cut_20     all	    0.4131
